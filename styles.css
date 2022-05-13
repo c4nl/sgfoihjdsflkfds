@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "vampires";
+    src: url("fonts/vampiress.ttf");
+}
+
+@font-face {
+    font-family: "Gothic";
+    src: url("fonts/MB-GothicDawn_Font.ttf");
+}
+
+@font-face {
+    font-family: "Blace";
+    src: url("fonts/BLACEB__.TTF");
+}
+* {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    margin-top: 45px;
+    margin-left: 20px;
+    width: 70%;
+}
+
+.header_wrapper {
+    display: flex;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+section h1 {
+    font-size: 300px;
+    font-family: Blace;
+
+}
+
+section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 5px;
+}
+
+#center {
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  -webkit-transform:translate(-50%,-50%);
+  -moz-transform:translate(-50%,-50%);
+  -ms-transform:translate(-50%,-50%);
+  -o-transform:translate(-50%,-50%)
+}
+#overlay-toggle:checked ~ .overlay {
+  animation-fill-mode: forwards;
+  animation-name: fade, hide;
+  animation-delay: 0s, 600ms;
+  animation-duration: 600ms, 1ms;
+}
+#overlay-toggle:checked ~ .overlay label {
+  animation-fill-mode: forwards;
+  animation-name: fade;
+  animation-delay: 0s;
+  animation-duration: 500ms;
+}
+
+.oblivion_wrapper {
+    border: 2px solid grey;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    border-radius: 20px;
+    display: flex;
+    margin: 25px;
+}
+
+.oblivion_wrapper li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: red;
+    margin-left: 10px;
+}
+
+.body_wrapper {
+    display: flex;
+    flex-flow: row;
+}
+
+.council {
+    margin-top: 20px;
+    margin-left: auto;
+    width: max-content;
+}
+
+.logo_wrapper {
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: auto;
+}
+
+.imgheader {
+    width: 50px;
+    padding: 13px;
+}
+
+.logo {
+    margin-top: 5px;
+    width: 250px;
+    height: 160px;
+}
+
+.tt {
+    width: 43px;
+    padding: 10px;
+}
+
+.disc {
+    width: 63px;
+    padding: 10px;
+}
+
+.pfp {
+    width: 60px;
+    border-radius: 55px;
+}
+
+a {
+    color: unset;
+}
+
+.egirl {
+    color: red;
+}
+
+.oblivion {
+    color: rgb(104, 104, 255);
+}
+
+.wivlo {
+    color: blanchedalmond;
+}
+
+.yurei {
+    color: rgb(255, 53, 171);
+}
+
+.imgheader:hover {
+    width: 60px;
+}
+@media(max-width: 1474px) {
+
+        * {
+            overflow: unset;
+        }
+}
+
+/* LAPTOP */
+@media(max-width: 1124px) {
+
+     * {
+         overflow: unset;
+     }
+    .logo_wrapper {
+        display: none;
+    }
+    .body_wrapper {
+        flex-direction: column;
+    }
+    .header_wrapper {
+        margin-left: 0;
+        margin: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    header {
+        flex-flow: row;
+        justify-content: center;
+        margin-left: 170px;
+        margin-bottom: 20px;
+    }
+    .council {
+        display: flex;
+        margin: 0;
+        margin-right: 0;
+        margin-left: 0;
+        flex-flow: column;
+    }
+    .bigwrap {
+        display: flex;
+        justify-content: center;
+    }
+    section {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    section h1 {
+        margin-top: 20px;
+        font-size: 50px;
+    }
+
+  }
+
+  @media(max-width: 1024px) {
+    header {
+        display: none;
+    }
+}
